@@ -1,4 +1,4 @@
-.contenedor1{
+.contenedor{
     height: 80%;
     border-radius: 40px;
     overflow: hidden;
@@ -6,7 +6,7 @@
     cursor: pointer;
 }
 
-.contenedor1 >img{
+.contenedor >img{
     object-fit: contain;
     transition: all 0.2s ease-in-out;
 }
@@ -30,4 +30,12 @@
     padding: 20px 0 20px 10px;
     
 }
+.defecto{
+    object-fit: contain;
+    transition: all 0.2s ease-in-out;
+}
 
+.defecto:hover {
+    transform: scale(1.2);
+    opacity: 0.3;
+}
