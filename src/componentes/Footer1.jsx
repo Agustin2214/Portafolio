@@ -1,6 +1,6 @@
 import React from "react"
 import style from "./Footer1.module.css"
-import typescript from '../media/Iconos/typescript.svg'
+import AGUSTINIBANEZ from '../media/Iconos/AGUSTIN.PDF'
 
 export function Footer1() {
     return (
@@ -11,7 +11,7 @@ export function Footer1() {
                  </div>
             <div className={style.contacto}>
                 <h3>Contactame</h3>
-                <a href={typescript} download="Cv_AgustinIbañez_WEBDEVELOPER">
+                <a href={AGUSTINIBANEZ} download="Cv_AgustinIbañez_WEBDEVELOPER">
 <p> Descargar CV</p>
 </a>
             </div>
