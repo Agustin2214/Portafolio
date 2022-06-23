@@ -57,4 +57,7 @@ button {
    button:active {
     transform: scale(0.95);
    }
-   
+   .deploybtn{
+size: 5px;
+background-color: red;
+   }
