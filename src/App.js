@@ -1,18 +1,20 @@
 
 import './App.css';
-import { Home } from './componentes/Home';
-import { Nav } from './componentes/Nav';
+import { Home } from './componentes/Components/Home';
+import { Nav } from './componentes/Components/Nav';
 import {useState, useEffect} from 'react'
-import { About } from './componentes/About';
-import { Sliders } from './componentes/Sliders';
+import { About } from './componentes/Components/About';
+import { Sliders } from './componentes/Components/Sliders';
 import React from 'react';
-import { Info } from './componentes/Info';
-import { Footer1 } from './componentes/Footer1';
-import {OneComponent} from './componentes/OneComponent'
+import { Info } from './componentes/Components/Info';
+import { Footer1 } from './componentes/Components/Footer1';
 import {BrowserRouter,Switch,Route,Router} from 'react-router-dom'
-import { TwoCompent } from './componentes/TwoCompent';
-import { ThereeComponent } from './componentes/ThreeComponent';
 
+import {OneComponent} from './componentes/Proyect/OneComponent'
+import { TwoCompent } from './componentes/Proyect/TwoCompent';
+import { ThereeComponent } from './componentes/Proyect/ThreeComponent';
+import { FourComponent } from './componentes/Proyect/FourComponent';
+import  {Fivecomponents}  from './componentes/Proyect/Fivecomponents';
 function App() {
 
 
@@ -49,7 +51,9 @@ useEffect(() => {
       <Route exact path ='/1' component = {OneComponent} />
       <Route exact path ='/2' component = {TwoCompent} />
       <Route exact path ='/3' component = {ThereeComponent} />
-      
+      <Route exact path ='/4' component = {FourComponent} />
+      <Route exact path ='/5' component = {Fivecomponents} />
+    
       
       </BrowserRouter>
     </div>

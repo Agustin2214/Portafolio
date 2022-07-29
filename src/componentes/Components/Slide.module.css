@@ -1,0 +1,41 @@
+.contenedor{
+    height: 80%;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.contenedor >img{
+    object-fit: contain;
+    transition: all 0.2s ease-in-out;
+}
+    .contenedor:hover >img{
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+.descripcion{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 30px;
+    border-top-left-radius: 20px;
+    opacity: 0.8;
+}
+.descripcion >span{
+    color: white;
+    display: block;
+    font-size: 22px;
+    padding: 20px 0 20px 10px;
+    
+}
+.defecto{
+    object-fit: contain;
+    transition: all 0.2s ease-in-out;
+}
+
+.defecto:hover {
+    transform: scale(1.2);
+    opacity: 0.3;
+}

@@ -1,0 +1,58 @@
+.contenedor{
+    display: flex;
+    background-color: white;
+    color: black;
+    height: 70vh;
+    padding: 100px 0 100px 0;
+}
+
+.lorem{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+    padding: 0 100px 0 100px;
+}
+
+.lorem > h3 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.lorem > p{
+    line-height: 1.5;
+    font-size: 22px;
+}
+
+.img{
+    width: 700px;
+    height: 500px;
+    display: flex;
+    align-self: center;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 960px) {
+    .contenedor{
+        flex-direction: column;
+        height:  auto;
+        padding: 0;
+    }
+.lorem{
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 20px 50px 20px;
+}
+.lorem > h3 {
+    font-size: 20px;
+    text-align: center;
+}
+.img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.img >img{
+    width: 100%;
+}
+}
