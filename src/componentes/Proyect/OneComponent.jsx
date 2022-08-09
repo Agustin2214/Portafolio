@@ -2,13 +2,20 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import apidogs from '../../media/APIDOGS.mp4'
 import style from './OneComponent.module.css'
-
-
+import Nav from 'react-bootstrap/Nav'
+import Button from 'react-bootstrap/Button'
 
 
 export function OneComponent() {
     return (
+        <>
+<nav className={style.navBar}>
+<Link to='/5'><p>Anterior</p></Link>
+<Link to='/2'><p>Siguiente</p></Link>
+
+</nav>
         <div className={style.contenedor}>
+            
             <div className={style.lorem}>
             <h1>API DOGS</h1>
             <p>Proyecto Individual(PI) realizado en el bootcamp Soy Henry!
@@ -20,7 +27,8 @@ REACT, REDUX, NODEJS, EXPRESSJS, POSTGRESQL, SEQUELIZE, CSS, JAVASCRIPT,HTML.
 
 <a className={style.ref} href="https://github.com/Agustin2214/PI-Dogs-main"> <i className="fab fa-github github"></i></a>
 
-<Link to='/'> <button className={style.btn}>Volver</button></Link>
+<Link to='/'> <button className={style.btn}>Volver </button></Link>
+
                
             
                 
@@ -31,5 +39,7 @@ REACT, REDUX, NODEJS, EXPRESSJS, POSTGRESQL, SEQUELIZE, CSS, JAVASCRIPT,HTML.
             </div>
            
         </div>
+
+    </>
     )
 }

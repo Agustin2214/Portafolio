@@ -9,6 +9,12 @@ import style from './FourComponent.module.css'
 
 export function FourComponent() {
       return (
+        <>
+        <nav className={style.navBar}>
+        <Link to='/3'><p>Anterior</p></Link>
+        <Link to='/5'><p>Siguiente</p></Link>
+        
+        </nav>
         <div className={style.contenedor}>
             <div className={style.lorem}>
             <h1>BALANCE</h1>
@@ -25,5 +31,6 @@ export function FourComponent() {
             </div>
            
         </div>
+        </>
     )
 }

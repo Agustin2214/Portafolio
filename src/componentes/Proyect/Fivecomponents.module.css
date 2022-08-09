@@ -67,6 +67,12 @@ button {
     color: rgb(28, 28, 44);
    
 }
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
 
    @media screen and (max-width: 960px) {
   

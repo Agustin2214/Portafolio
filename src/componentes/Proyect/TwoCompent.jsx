@@ -8,6 +8,13 @@ import style from './OneComponent.module.css'
 
 export function TwoCompent() {
     return (
+        <>
+<nav className={style.navBar}>
+<Link to='/1'><p>Anterior</p></Link>
+<Link to='/3'><p>Siguiente</p></Link>
+
+</nav>
+
         <div className={style.contenedor}>
             <div className={style.lorem}>
             <h1>BLOCKFLIX</h1>
@@ -27,6 +34,7 @@ export function TwoCompent() {
             </div>
            
         </div>
+        </>
     )
 }
 

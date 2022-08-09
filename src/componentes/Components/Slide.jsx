@@ -58,7 +58,7 @@ import style from './Slide.module.css'
         {
             img:'https://images.pexels.com/photos/6801681/pexels-photo-6801681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
             alt:'Proyecto4',
-            descripcion:'BalanceAlkemy-',
+            descripcion:'BALANCE ALKEMY-',
             id:4
         },
         {

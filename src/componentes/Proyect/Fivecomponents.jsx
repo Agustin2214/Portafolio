@@ -7,6 +7,12 @@ import style from './Fivecomponents.module.css'
 export function Fivecomponents() {
     
     return (
+        <>
+        <nav className={style.navBar}>
+        <Link to='/4'><p>Anterior</p></Link>
+        <Link to='/1'><p>Siguiente</p></Link>
+        
+        </nav>
         <div className={style.contenedor}>
             <div className={style.lorem}>
             <h1>PALINDROMOS</h1>
@@ -25,6 +31,7 @@ export function Fivecomponents() {
             <video width="700" height="500" controls autoplay src={Palidromo}></video>
             </div>
         </div>
+        </>
     )
 }
 

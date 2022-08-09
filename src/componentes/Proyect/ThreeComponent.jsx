@@ -9,6 +9,12 @@ import WINE from '../../media/WINES.mp4'
 
 export function ThereeComponent() {
     return (
+        <>
+        <nav className={style.navBar}>
+        <Link to='/2'><p>Anterior</p></Link>
+        <Link to='/4'><p>Siguiente</p></Link>
+        
+        </nav>
         <div className={style.contenedor}>
             <div className={style.lorem}>
             <h1>VINOTECA</h1>
@@ -30,6 +36,7 @@ export function ThereeComponent() {
             </div>
            
         </div>
+        </>
     )
 }
 
