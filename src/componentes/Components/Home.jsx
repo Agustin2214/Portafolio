@@ -12,8 +12,8 @@ export function Home() {
            
             {/* <img className={style.img} src={home} alt="asd" /> */}
             <video className={style.img} src={pc} autoPlay loop muted />
-            <h1>Agustin Ibañez</h1>
-            <p>Desarollador Web FullStack</p>
+            <h1 >Agustin Ibañez</h1>
+            <p className={style.spans}>Desarollador Web FullStack</p>
         </div>
     )
 }

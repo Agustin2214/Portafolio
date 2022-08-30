@@ -75,7 +75,7 @@ import style from './Slide.module.css'
            const slidesmap = slides.map(e=>( 
                
             <div className={style.contenedor}>
-              <Link className={style.defecto} to ={'/'+e.id}>  <img src={e.img} alt={e.alt} /></Link>
+              <Link className={style.defecto} to ={'/proyecto/'+e.id}>  <img src={e.img} alt={e.alt} /></Link>
                 <div className={style.descripcion}>
                    <span >{e.descripcion}</span>
                     

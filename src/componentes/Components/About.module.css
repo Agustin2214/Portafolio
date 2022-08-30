@@ -26,11 +26,12 @@
 }
 
 .img{
-    width: 700px;
+    width: 500px;
     height: 500px;
     display: flex;
     align-self: center;
     overflow: hidden;
+    border-radius: 500px;
 }
 
 @media only screen and (max-width: 960px) {
@@ -49,6 +50,7 @@
     text-align: center;
 }
 .img{
+    display: none;
     width: 100%;
     margin-bottom: 50px;
 }

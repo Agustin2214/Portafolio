@@ -1,6 +1,6 @@
 import React from "react"
 import style from "./Footer1.module.css"
-import AGUSTINIBANEZ from '../../media/Iconos/AGUSTINCV.pdf'
+import AGUSTINIBANEZ from '../../media/Iconos/CV_AGUSTIN_FULLSTACK_NODEREACT.pdf'
 
 export function Footer1() {
     return (

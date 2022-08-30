@@ -15,6 +15,7 @@ import { TwoCompent } from './componentes/Proyect/TwoCompent';
 import { ThereeComponent } from './componentes/Proyect/ThreeComponent';
 import { FourComponent } from './componentes/Proyect/FourComponent';
 import  {Fivecomponents}  from './componentes/Proyect/Fivecomponents';
+import { OnePagePoyect } from './componentes/Proyect/OnePagePoyect';
 function App() {
 
 
@@ -53,6 +54,7 @@ useEffect(() => {
       <Route exact path ='/3' component = {ThereeComponent} />
       <Route exact path ='/4' component = {FourComponent} />
       <Route exact path ='/5' component = {Fivecomponents} />
+      <Route exact path ='/proyecto/:id' component = {OnePagePoyect} />
     
       
       </BrowserRouter>
