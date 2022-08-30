@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import apidogs from '../../media/APIDOGS.mp4'
 
@@ -72,9 +72,19 @@ export function OnePagePoyect() {
  id = id - 1 
  let ultimo = 6
  let primero = 1
-let siguiente = `/proyecto/${id==ultimo-2?primero:id+2}`
+ let siguiente = `/proyecto/${id==ultimo-2?primero:id+2}`
+ let anterior = `/proyecto/${id==primero-1?ultimo-1 :id}`
 
-let anterior = `/proyecto/${id==primero-1?ultimo-1 :id}`
+
+useEffect(() => {
+    function toTop() {
+        window.scrollTo({top:0,left:0,behavior:"smooth"})
+    }
+    toTop()
+}, []);
+
+
+
  return (
     <>
 <nav className={style.navBar}>
@@ -82,9 +92,14 @@ let anterior = `/proyecto/${id==primero-1?ultimo-1 :id}`
 
 </nav>
 <div className={style.btnsig}> 
-<Link to={anterior}> <button className={style.btnsig1}>Anterior</button> </Link>
+<Link className={style.links} to={anterior}> <button className={style.btnsig1}>Anterior</button> </Link>
 <Link to='/'><button className={style.btnsig1}>Home</button></Link>
 <Link to={siguiente}><button className={style.btnsig1}>Siguiente</button></Link>
+
+</div>
+<div className={style.contenedordecontenedor}>
+<div className={style.contenedorflecha}>
+<Link to={anterior}><a href="#" className={style.arrowleft}></a></Link>
 </div>
     <div className={style.contenedor}>
         
@@ -109,6 +124,10 @@ let anterior = `/proyecto/${id==primero-1?ultimo-1 :id}`
        </div>
 
     
+    </div>
+    <div className={style.contenedorflecha}>
+    <Link to={siguiente}><a href="#" className={style.arrowright}></a></Link>
+    </div>
     </div>
     <div className={style.footer2}>
         <p>Agustin Ibañez</p>
