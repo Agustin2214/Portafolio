@@ -28,7 +28,7 @@ const slides =[
         id:2,
         video:BLOCKFLIX,
         info: "Mi primer proyecto creado, se trata de una SPA(Single page Application) en la cual se obtienen datos de una API de películas.Contiene detalle de cada película, un buscador debounce y un scroll infinito.En este proyecto utilice las siguiente tecnologías: REACT, JAVASCRIPT, CSS MODULE, HTML5. ",
-        github:"https://github.com/Agustin2214/BLOCKFLIX",
+        github:"",
         deploy:''
     },
 
@@ -40,7 +40,7 @@ const slides =[
         video:WINE,
         info: "Proyecto final realizado para obtener la certificacion de FULLSTACK DEVELOPER del bootcamp Soy Henry!.Se trata de un E-COMMERCE de vinos con todas las funcionalidades que cuenta un proyecto de estas caracteristicas.En este proyecto utilice las siguiente tecnologías: REACT, REDUX, CSS, NODEJS, EXPRESSJS, MONGODB. ",
         github:"https://github.com/vinoteca-ecommerce/wineEcommerce",
-        deploy:'https://wine-ecommercew.vercel.app/'
+        deploy:''
     },
     {
         img:'https://images.pexels.com/photos/6801681/pexels-photo-6801681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -61,7 +61,7 @@ const slides =[
         video:Palidromo,
         info: "Pequeño proyecto que integra un backend con realizado con Node y Express, y un fontend realizado con react y bootstrap.Se realiza una petecion a la API local enviandole una palabra por query para que esta nos responda con la misma palabra invertada y en caso de ser PALINDROMO nos infroma tambien. En este caso utilize este proyecto para practicar deploy de back en heroku y front en vercel.",
         github:"https://github.com/Agustin2214/CopyWrite",
-        deploy:'https://copy-write.vercel.app/'
+        deploy:''
 
     }
 ]
